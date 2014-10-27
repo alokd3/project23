@@ -35,7 +35,8 @@ plot(aggregate.data, type = "o", ylab = expression("Total Emissions, PM"[2.5]),
     xlab = "Year", main = "Total Emissions in the United States")
 polygon(aggregate.data, col = "green", border = "blue")
 ```
-(graphs/plot_1.png)
+![Plot1](/graphs/plot_1.png)
+
 plot of chunk unnamed-chunk-3
 
 It is clear that total emissions from PM2.5 have decreased in the United States from 1999 to 2008
