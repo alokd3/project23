@@ -1,7 +1,8 @@
 Peer Assessment 2: Exploratory Data Analysis
-Introduction
-Fine particulate matter (PM2.5) is an ambient air pollutant for which there is strong evidence that it is harmful to human health. In the United States, the Environmental Protection Agency (EPA) is tasked with setting national ambient air quality standards for fine PM and for tracking the emissions of this pollutant into the atmosphere. Approximatly every 3 years, the EPA releases its database on emissions of PM2.5. This database is known as the National Emissions Inventory (SCCPM25). You can read more information about the SCCPM25 at the EPA National Emissions Inventory web site.
-For each year and for each type of PM source, the SCCPM25 records how many tons of PM2.5 were emitted from that source over the course of the entire year. The data that will be use for this assignment are for 1999, 2002, 2005, and 2008.
+
+- Introduction
+ Fine particulate matter (PM2.5) is an ambient air pollutant for which there is strong evidence that it is harmful to human health. In the United States, the Environmental Protection Agency (EPA) is tasked with setting national ambient air quality standards for fine PM and for tracking the emissions of this pollutant into the atmosphere. Approximatly every 3 years, the EPA releases its database on emissions of PM2.5. This database is known as the National Emissions Inventory (SCCPM25). You can read more information about the SCCPM25 at the EPA National Emissions Inventory web site.
+ For each year and for each type of PM source, the SCCPM25 records how many tons of PM2.5 were emitted from that source over the course of the entire year. The data that will be use for this assignment are for 1999, 2002, 2005, and 2008.
 
 ```{r}
 library(plyr)
@@ -34,7 +35,7 @@ plot(aggregate.data, type = "o", ylab = expression("Total Emissions, PM"[2.5]),
     xlab = "Year", main = "Total Emissions in the United States")
 polygon(aggregate.data, col = "green", border = "blue")
 ```
-
+[https://github.com/alokd3/project23/blob/master/graphs/plot_1.png]
 plot of chunk unnamed-chunk-3
 
 It is clear that total emissions from PM2.5 have decreased in the United States from 1999 to 2008
@@ -55,10 +56,10 @@ plot(aggregate.24510, type = "o", ylab = expression("Total Emissions, PM"[2.5]),
     xlab = "Year", main = "Total Emissions for Baltimore County", xlim = c(1999, 
         2008))
 ```
-
+[https://github.com/alokd3/project23/blob/master/graphs/plot_2.png]
 
 Total emissions from PM2.5 have decreased in the Baltimore City, Maryland from 1999 to 2008 however there was an increase of PM2.5 between the year 2002 and 2006.
-# PLOT3
+# Plot3
 
 Sources have seen decreases in emissions from 1999-2008 for Baltimore City Which have seen increases in emissions from 1999-2000
 ```{r}
@@ -79,7 +80,7 @@ qplot(year, Emissions, data = SCCPM25.24510.type, group = Pollutant_Type, color 
     xlab = "Year", main = "Total Emissions in U.S. by Type of Pollutant")
 
 ```
-
+[https://github.com/alokd3/project23/blob/master/graphs/plot_3.png]
 # plot4
 
 How emissions from coal combustion-related sources changed from 1999-2008
@@ -104,7 +105,7 @@ plot(aggregate.coal, type = "o", ylab = expression("Total Emissions, PM"[2.5]),
     xlim = c(1999, 2008))
 polygon(aggregate.coal, col = "red", border = "red")
 ```
-
+[https://github.com/alokd3/project23/blob/master/graphs/plot_4.png]
 
 # Plot5
 
@@ -130,7 +131,7 @@ plot(aggregate.motor.24510, type = "o", ylab = expression("Total Emissions, PM"[
     xlab = "Year", main = "Total Emissions from Motor Vehicle Sources")
 
 ```
-
+[https://github.com/alokd3/project23/blob/master/graphs/plot_5.png]
 # Plot6
 
 motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California have decreased.The city which has seen greater changes over time in motor vehicle emissions is los angeles county
@@ -184,3 +185,4 @@ qplot(Year, Emissions, data = aggregated.motor.zips, group = Group, color = Grou
     xlab = "Year", main = "Comparison of Total Emissions by County")
 
 ```
+[https://github.com/alokd3/project23/blob/master/graphs/plot_6.png]
