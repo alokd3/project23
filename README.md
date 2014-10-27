@@ -58,7 +58,7 @@ plot(aggregate.24510, type = "o", ylab = expression("Total Emissions, PM"[2.5]),
         2008))
 ```
 [https://github.com/alokd3/project23/blob/master/graphs/plot_2.png]
-
+![Plot2](/graphs/plot_2.png)
 Total emissions from PM2.5 have decreased in the Baltimore City, Maryland from 1999 to 2008 however there was an increase of PM2.5 between the year 2002 and 2006.
 # Plot3
 
@@ -81,7 +81,8 @@ qplot(year, Emissions, data = SCCPM25.24510.type, group = Pollutant_Type, color 
     xlab = "Year", main = "Total Emissions in U.S. by Type of Pollutant")
 
 ```
-[https://github.com/alokd3/project23/blob/master/graphs/plot_3.png]
+![Plot3](/graphs/plot_3.png)
+
 # plot4
 
 How emissions from coal combustion-related sources changed from 1999-2008
@@ -106,7 +107,7 @@ plot(aggregate.coal, type = "o", ylab = expression("Total Emissions, PM"[2.5]),
     xlim = c(1999, 2008))
 polygon(aggregate.coal, col = "red", border = "red")
 ```
-[https://github.com/alokd3/project23/blob/master/graphs/plot_4.png]
+![Plot4](/graphs/plot_4.png)
 
 # Plot5
 
@@ -132,7 +133,8 @@ plot(aggregate.motor.24510, type = "o", ylab = expression("Total Emissions, PM"[
     xlab = "Year", main = "Total Emissions from Motor Vehicle Sources")
 
 ```
-[https://github.com/alokd3/project23/blob/master/graphs/plot_5.png]
+![Plot5](/graphs/plot_5.png)
+
 # Plot6
 
 motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California have decreased.The city which has seen greater changes over time in motor vehicle emissions is los angeles county
@@ -186,4 +188,4 @@ qplot(Year, Emissions, data = aggregated.motor.zips, group = Group, color = Grou
     xlab = "Year", main = "Comparison of Total Emissions by County")
 
 ```
-[https://github.com/alokd3/project23/blob/master/graphs/plot_6.png]
+![Plot5](/graphs/plot_5.png)
